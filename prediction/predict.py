@@ -4,7 +4,7 @@ from PIL import Image
 import uuid
 import io
 import numpy as np
-from ..cloud import boto3_client
+from cloud import boto3_client
 
 
 class_color_mapping = {

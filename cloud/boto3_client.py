@@ -3,8 +3,8 @@ import boto3
 from botocore.exceptions import ClientError
 from dotenv import load_dotenv
 import os
-from ..utils import image_utils
-from ..utils.types_utils import ImageWithMetadata
+from utils import image_utils
+from utils.types_utils import ImageWithMetadata
 
 # Load environment variables from .env file
 load_dotenv()

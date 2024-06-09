@@ -2,12 +2,12 @@ import io
 import cv2
 from PIL import Image
 from fastapi import UploadFile, APIRouter, HTTPException
-from ..cloud.boto3_client import get_all_images
-from ..prediction import predict
+from cloud.boto3_client import get_all_images
+from prediction import predict
 import json
 import sqlite3
 from typing import List
-from ..utils.types_utils import ClassificationResult, ImageWithClassification, PaginatedImages, ImageWithMetadata
+from utils.types_utils import ClassificationResult, ImageWithClassification, PaginatedImages, ImageWithMetadata
 from datetime import datetime
 
 router = APIRouter(
